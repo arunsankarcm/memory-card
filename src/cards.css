@@ -1,0 +1,42 @@
+/* cards.css */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Make the body take up the full height of the viewport */
+}
+
+.gif-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    /* Three columns with a width of 150px each */
+    grid-template-rows: repeat(2, 150px);
+    /* Two rows with a height of 150px each */
+    grid-column-gap: 20px;
+    /* Gap between columns */
+    grid-row-gap: 20px;
+    /* Gap between rows */
+}
+
+.gif-item {
+    width: 150px;
+    /* Set the width for each grid item */
+    height: 150px;
+    /* Set the height for each grid item */
+    border: 2px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gif-item img {
+    width: 100%;
+    /* Make the image fill its container */
+    height: 100%;
+    /* Make the image fill its container */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
